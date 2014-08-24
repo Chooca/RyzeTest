@@ -4,7 +4,7 @@
     <FirstRun>false</FirstRun>
     <References>
       <Update>true</Update>
-      <NewPath>C:\Users\xx\Desktop\LeagueSharp\Assemblies\System</NewPath>
+      <NewPath>F:\1 a FOLDER\L# for 4.14   07.17\Compiler\Repositories\4F47A75E\trunk</NewPath>
     </References>
     <Postbuild>
       <Move>
