@@ -105,6 +105,9 @@
     <Repository Enabled="true">
       <Author>TRUS</Author>
       <Url>https://github.com/trus/L-</Url>
+    <Repository Enabled="true">
+      <Author>Chooca</Author>
+      <Url>https://github.com/Chooca/RyzeTest</Url>
     </Repository>
   </Repositories>
 </Config>
