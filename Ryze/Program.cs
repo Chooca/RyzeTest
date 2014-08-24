@@ -5,7 +5,7 @@ using SharpDX;
 using SharpDX.Direct3D9;
 using System;
 
-namespace Le_SBTW
+namespace RyzeNFD
 {
   internal class Program
   {
@@ -42,17 +42,6 @@ namespace Le_SBTW
           Game.add_OnWndProc(new WndProc((object) null, __methodptr(Game_OnWndProc)));
           // ISSUE: method pointer
           Drawing.add_OnDraw(new Draw((object) null, __methodptr(Drawing_OnDraw)));
-          break;
-        case "Akali":
-          Program.Ts = new SimpleTs(800f, SimpleTs.TargetingMode.AutoPriority);
-          // ISSUE: method pointer
-          Game.add_OnGameUpdate(new GameUpdate((object) null, __methodptr(Game_OnGameUpdate)));
-          // ISSUE: method pointer
-          Game.add_OnWndProc(new WndProc((object) null, __methodptr(Game_OnWndProc)));
-          // ISSUE: method pointer
-          Drawing.add_OnDraw(new Draw((object) null, __methodptr(Drawing_OnDraw)));
-          // ISSUE: method pointer
-          Obj_AI_Base.add_OnProcessSpellCast(new GameObjectProcessSpellCast((object) null, __methodptr(Obj_AI_Hero_OnProcessSpellCast)));
           break;
       }
     }
