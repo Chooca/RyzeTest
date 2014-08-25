@@ -1,113 +1,64 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Settings>
-    <FirstRun>false</FirstRun>
-    <References>
-      <Update>true</Update>
-      <NewPath>F:\1 a FOLDER\L# for 4.14   07.17\Compiler\Repositories\4F47A75E\trunk</NewPath>
-    </References>
-    <Postbuild>
-      <Move>
-        <Wildcard>*.dll</Wildcard>
-        <Directory>Builds\</Directory>
-      </Move>
-      <Move>
-        <Wildcard>*.exe</Wildcard>
-        <Directory>Builds\</Directory>
-      </Move>
-      <Overwrite>true</Overwrite>
-    </Postbuild>
-  </Settings>
-  <Repositories>
-    <Repository Enabled="true">
-      <Info>Awesome Dude</Info>
-      <Author>Lizzaran</Author>
-      <Url>https://github.com/Lizzaran/LeagueSharp</Url>
-    </Repository>
-    <Repository Enabled="true">
-      <Info>LeagueSharp.Common</Info>
-      <Author>Esk0r</Author>
-      <Url>https://github.com/LeagueSharp/LeagueSharpCommon</Url>
-    </Repository>
-    <Repository Enabled="true">
-      <Info>That Syndra tho</Info>
-      <Author>Esk0r</Author>
-      <Url>https://github.com/Esk0r/LeagueSharp</Url>
-    </Repository>
-    <Repository Enabled="true">
-      <Author>RoachxD</Author>
-      <Url>https://github.com/RoachxD/LeagueSharp</Url>
-    </Repository>
-    <Repository Enabled="true">
-      <Author>trelli</Author>
-      <Url>https://github.com/trelli/LeagueSharp</Url>
-    </Repository>
-    <Repository Enabled="true">
-      <Author>detuks</Author>
-      <Url>https://github.com/detuks/LeagueSharp</Url>
-    </Repository>
-    <Repository Enabled="true">
-      <Author>Chogart</Author>
-      <Url>https://github.com/Chogart/LeagueSharp</Url>
-    </Repository>
-    <Repository Enabled="true">
-      <Author>Irvinee</Author>
-      <Url>https://github.com/Irvinee/leaguesharp</Url>
-    </Repository>
-    <Repository Enabled="true">
-      <Author>ehmehe</Author>
-      <Url>https://github.com/ehmehe/LeagueSharp</Url>
-    </Repository>
-    <Repository Enabled="true">
-      <Author>jasteph</Author>
-      <Url>https://github.com/jasteph/LeagueSharp</Url>
-    </Repository>
-    <Repository Enabled="true">
-      <Author>GXion</Author>
-      <Url>https://github.com/Xionanx/Leaguesharp-Projects</Url>
-    </Repository>
-    <Repository Enabled="true">
-      <Author>Ecko</Author>
-      <Url>https://github.com/BotHappy/Ecko</Url>
-    </Repository>
-    <Repository Enabled="true">
-      <Author>Beaving</Author>
-      <Url>https://github.com/Beaving/LeagueSharp</Url>
-    </Repository>
-    <Repository Enabled="false">
-      <Author>Esk0r</Author>
-      <Url>https://github.com/Esk0r/LeagueSharp</Url>
-    </Repository>
-    <Repository Enabled="true">
-      <Author>FlapperDoodlez</Author>
-      <Url>https://github.com/FlapperDoodlez/LeagueSharp</Url>
-    </Repository>
-    <Repository Enabled="true">
-      <Author>Hellsing</Author>
-      <Url>https://github.com/Hellsing/LeagueSharp</Url>
-    </Repository>
-    <Repository Enabled="true">
-      <Author>iSnorflake</Author>
-      <Url>https://github.com/Snorflake/LeagueSharp</Url>
-    </Repository>
-    <Repository Enabled="false">
-      <Author>LeagueSharp</Author>
-      <Url>https://github.com/LeagueSharp/LeagueSharpCommon</Url>
-    </Repository>
-    <Repository Enabled="true">
-      <Author>LXMedia1</Author>
-      <Url>https://github.com/LXMedia1/Leage-Sharp</Url>
-    </Repository>
-    <Repository Enabled="true">
-      <Author>Screeder</Author>
-      <Url>https://github.com/Screeder/SAwareness</Url>
-    </Repository>
-    <Repository Enabled="true">
-      <Author>TRUS</Author>
-      <Url>https://github.com/trus/L-</Url>
-    <Repository Enabled="true">
-      <Author>Chooca</Author>
-      <Url>https://github.com/Chooca/RyzeTest</Url>
-    </Repository>
-  </Repositories>
-</Config>
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cassinator</RootNamespace>
+    <AssemblyName>Cassinator</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    </Reference>
+    <Reference Include="LeagueSharp">
+      <HintPath>..\..\..\..\..\Desktop\LeagueSharp\Assemblies\System\LeagueSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="LeagueSharp.Common">
+      <HintPath>..\..\..\..\..\Desktop\LeagueSharp\Assemblies\System\LeagueSharp.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX">
+      <HintPath>..\..\..\..\..\Desktop\LeagueSharp\Assemblies\System\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ryze.cs" />
+    <Compile Include="Functions.cs" />
+    <Compile Include="Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.Podjebane z cassionator
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
